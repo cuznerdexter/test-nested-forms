@@ -1,7 +1,16 @@
 <p>dialog works!</p>
 
+<form [formGroup]="masterForm">
 
-<app-header></app-header>
-<app-notes></app-notes>
-<app-content></app-content>
-<app-footer></app-footer>
+    <input formControlName="formTitle"/>
+
+    <app-header formControlName="basicInfo"></app-header>
+    <app-notes formControlName="addressInfo"></app-notes>
+    <app-content></app-content>
+    <app-footer></app-footer>
+
+    <button mat-raised-button type="submit" [color]="'primary'" [disabled]="masterForm.invalid">SUBMIT</button>
+
+    masterForm = {{ masterForm.value | json }}
+
+</form>

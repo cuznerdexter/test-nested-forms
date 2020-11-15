@@ -1,1 +1,17 @@
 <p>notes works!</p>
+
+<ng-container [formGroup]="addressInfoForm">
+    <div class="row">
+      <label for="Street"> Street </label>
+        <input type="text" formControlName="street" class="">
+    </div>
+    <div class="row">
+        <label for="Town"> Town </label>
+          <input type="text" formControlName="town" class="">
+      </div>
+      <div class="row">
+        <label for="County"> County </label>
+          <input type="text" formControlName="county" class="">
+      </div>
+    
+</ng-container>
