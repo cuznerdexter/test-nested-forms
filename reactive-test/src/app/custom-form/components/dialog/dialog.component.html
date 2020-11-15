@@ -6,7 +6,7 @@
 
     <app-header formControlName="basicInfo"></app-header>
     <app-notes formControlName="addressInfo"></app-notes>
-    <app-content></app-content>
+    <ng-template appContent></ng-template>
     <app-footer></app-footer>
 
     <button mat-raised-button type="submit" [color]="'primary'" [disabled]="masterForm.invalid">SUBMIT</button>

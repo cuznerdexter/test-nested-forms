@@ -9,11 +9,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { ContentComponent } from './components/content/content.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NotesComponent } from './components/notes/notes.component';
+import { ContentDirective } from './components/dialog/content.directive';
 
 
 
 @NgModule({
-  declarations: [CustomFormComponent, DialogComponent, HeaderComponent, ContentComponent, FooterComponent, NotesComponent],
+  declarations: [CustomFormComponent, DialogComponent, HeaderComponent, ContentComponent, FooterComponent, NotesComponent, ContentDirective],
   imports: [
     CommonModule,
     FormsModule, ReactiveFormsModule,

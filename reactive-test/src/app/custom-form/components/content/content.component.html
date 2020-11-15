@@ -1,1 +1,12 @@
 <p>content works!</p>
+
+<ng-container [formGroup]="contentInfoForm">
+    <div class="row">
+      <label for="Content Notes"> Content Notes </label>
+        <input type="text" formControlName="contentNotes" class="">
+    </div>
+    <div class="row">
+      <label for="Content Data"> Content Data </label>
+        <input type="text" formControlName="contentData" class="">
+    </div>
+</ng-container>
